@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos Sair, Pessoal!</title>
+    <style>
+        /* Reset de margens e paddings para garantir consistência */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fundo animado com cores vibrantes */
+        body {
+            background: linear-gradient(to bottom, #ff9a8b, #ff6a88, #ff2a68); /* Degradê rosa e vermelho */
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animação de "pulse" no título */
+        h1::before {
+            content: "👕 ";
+            font-size: 2rem;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        h1::after {
+            content: " 👗";
+            font-size: 2rem;
+            animation: pulse 1.5s infinite alternate;
+        }
+
+        /* Animação de pulse */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* Efeito de animação para o botão */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            background-color: #ff2a68;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff6a88;
+            transform: scale(1.1);
+        }
+
+    </style>
+</head>
+<body>
+
+   <h1>Galera, comprei roupas novas! Não foi à toa... Vamos sair! 🎉</h1>
+
+   <!-- Botão para chamar a atenção para a ação -->
+   <a href="https://www.google.com/search?q=onde+sair+hoje" target="_blank">Onde vamos?</a>
+
+</body>
+</html>
